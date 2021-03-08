@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/bootstrap.min.css">
+    <link rel="stylesheet" href="src/main.css">
+    <title>ClaDora</title>
+</head>
+
+<body id="body" class="bg-dark">
+
+    <div class="container-fluid">
+        <button class="btn btn-dark" id="btnTheme" onclick="cambioTema();">Tema</button>
+        <div class="row">
+            <form name="cal">
+                <div class="col-12 mb-3">
+                    <input type="text" placeholder="0" name="valor" id="res"
+                        class="form-control mt-1 bg-dark text-white res">
+                </div>
+                <div class="col-12 mb-3">
+                    <input type="text" id="res2" class="form-control mt-1 bg-dark text-white res2">
+                </div>
+            </form>
+            <div class="col-3">
+                <button id="btn" class="btn btn-light button2" onclick="cal.valor.value+='9';auxResultado();">9</button>
+                <button id="btn1" class="btn btn-light button2"
+                    onclick="cal.valor.value+='6';auxResultado();">6</button>
+                <button id="btn2" class="btn btn-light button2"
+                    onclick="cal.valor.value+='3';auxResultado();">3</button>
+            </div>
+            <div class="col-3">
+                <button id="btn3" class="btn btn-light button2"
+                    onclick="cal.valor.value+='8';auxResultado();">8</button>
+                <button id="btn4" class="btn btn-light button2"
+                    onclick="cal.valor.value+='5';auxResultado();">5</button>
+                <button id="btn5" class="btn btn-light button2"
+                    onclick="cal.valor.value+='2';auxResultado();">2</button>
+            </div>
+            <div class="col-3">
+                <button id="btn6" class="btn btn-light button2"
+                    onclick="cal.valor.value+='7';auxResultado();">7</button>
+                <button id="btn7" class="btn btn-light button2"
+                    onclick="cal.valor.value+='4';auxResultado();">4</button>
+                <button id="btn8" class="btn btn-light button2"
+                    onclick="cal.valor.value+='1';auxResultado();">1</button>
+            </div>
+            <div class="col-3">
+                <button id="btn9" class="btn btn-dark button" onclick="cal.valor.value+='+';auxResultado();">+</button>
+                <button id="btn10" class="btn btn-dark button" onclick="cal.valor.value+='-';auxResultado();">-</button>
+                <button id="btn11" class="btn btn-dark button" onclick="cal.valor.value+='*';auxResultado();">*</button>
+            </div>
+            <div class="col-3">
+                <button id="btn12" onclick="reset();" class="btn btn-dark button">C</button>
+            </div>
+            <div class="col-3">
+                <button id="btn13" class="btn btn-light button2"
+                    onclick="cal.valor.value+='0';auxResultado();">0</button>
+            </div>
+            <div class="col-3">
+                <button id="btn14" class="btn btn-dark button" onclick="cal.valor.value+='.';auxResultado();">.</button>
+            </div>
+            <div class="col-3">
+                <button id="btn15" class="btn btn-dark button" onclick="cal.valor.value+='/';auxResultado();">/</button>
+            </div>
+            <div class="col-12">
+                <button id="btn16" class="btn btn-light button2" onclick="resultado();">=</button>
+            </div>
+        </div>
+        <div class="col-12">
+            <p id="text" class="text-center text-white">&copy; CodeGX 2021</p>
+        </div>
+    </div>
+
+    <script src="src/bootstrap.min.js"></script>
+    <script src="src/app.js"></script>
+</body>
+
+</html>
