@@ -59,7 +59,9 @@ function auxResultado() {
     var input1 = document.getElementById("res");
     var input2 = document.getElementById("res2");
     var valor = input1.value;
-    if(valor >= 9999999999999){
+    textoArea = document.getElementById("res").value;
+    numeroCaracteres = textoArea.length;  
+    if(numeroCaracteres >= 13){
         input1.style.fontSize = "24px";
     }else{
         input1.style.fontSize = "36px";
