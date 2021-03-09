@@ -21,7 +21,7 @@ function createWindow() {
         height: 560,
         maximizable: true,
         resizable: false,
-        icon: path.join(__dirname,'src/CalDora-logo.png'),
+        icon: path.join(__dirname,'icons/icon.png'),
         webPreferences: {
             nodeIntegration: true
         }

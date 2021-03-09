@@ -61,6 +61,8 @@ function auxResultado() {
     var valor = input1.value;
     if(valor >= 9999999999999){
         input1.style.fontSize = "24px";
+    }else{
+        input1.style.fontSize = "36px";
     }
     input2.value = eval(valor);
 }
@@ -76,5 +78,6 @@ function reset() {
     var input2 = document.getElementById("res2");
     input1.value = "";
     input2.value = "";
+    input1.style.fontSize = "36px";
 }
 
