@@ -25,7 +25,7 @@ function cambioTema() {
         document.getElementById("btn14").className = "btn btn-dark button";
         document.getElementById("btn15").className = "btn btn-dark button";
         document.getElementById("btn16").className = "btn btn-light button2";
-        document.getElementById("btnTheme").className = "btn btn-dark";
+        document.getElementById("btnTheme").className = "btn btn-dark buttom3";
         document.getElementById("text").className = "text-center text-white";
         document.getElementById("res").className = "form-control mt-1 bg-dark text-white res";
         document.getElementById("res2").className = "form-control mt-1 bg-dark text-white res2";
@@ -48,7 +48,7 @@ function cambioTema() {
         document.getElementById("btn14").className = "btn btn-light button2";
         document.getElementById("btn15").className = "btn btn-light button2";
         document.getElementById("btn16").className = "btn btn-dark button";
-        document.getElementById("btnTheme").className = "btn btn-light";
+        document.getElementById("btnTheme").className = "btn btn-light buttom3";
         document.getElementById("text").className = "text-center text-dark";
         document.getElementById("res").className = "form-control mt-1 bg-light text-dark res";
         document.getElementById("res2").className = "form-control mt-1 bg-light text-dark res2";
@@ -59,6 +59,9 @@ function auxResultado() {
     var input1 = document.getElementById("res");
     var input2 = document.getElementById("res2");
     var valor = input1.value;
+    if(valor >= 9999999999999){
+        input1.style.fontSize = "24px";
+    }
     input2.value = eval(valor);
 }
 function resultado() {

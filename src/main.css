@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: 'Spicy Rice';
+    src: url(‘Spicy_Rice/SpicyRice-Regular.ttf′) format(‘ttf’);
+    font-weight: 100;
+    font-style: italic;
+    }
+body{
+    font-family: 'Spicy Rice', cursive;
+}
 .button{
     margin: 0;
     width: 100%;
@@ -16,6 +25,11 @@
     margin-bottom: 10px;
     border: 1px solid #252525;
 }
+
+.buttom3{
+    margin-left: 250px;
+    margin-top: 10px;
+}
 #btnTheme{
     margin-bottom: 10px;
 }
@@ -24,12 +38,13 @@ div{
     margin: 0;
 }
 .res{
+    text-align: right;
     height: 70px;
     border: none;
     font-size: 36px;
 }
-
 .res2{
+    text-align: right;
     margin-bottom: 10px;
     border: none;
 }

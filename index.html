@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="src/bootstrap.min.css">
     <link rel="stylesheet" href="src/main.css">
     <title>ClaDora</title>
@@ -11,16 +12,17 @@
 
 <body id="body" class="bg-dark">
 
-    <div class="container-fluid">
-        <button class="btn btn-dark" id="btnTheme" onclick="cambioTema();">Tema</button>
+    <div class="container-fluid animate__animated animate__fadeIn">
+        <button class="btn btn-dark buttom3" id="btnTheme" onclick="cambioTema();">Tema</button>
         <div class="row">
             <form name="cal">
                 <div class="col-12 mb-3">
-                    <input type="text" placeholder="0" name="valor" id="res"
-                        class="form-control mt-1 bg-dark text-white res">
+                    <input type="text" readonly="readonly" placeholder="0" name="valor" id="res"
+                        class="form-control mt-1 bg-dark text-white res border-0">
                 </div>
                 <div class="col-12 mb-3">
-                    <input type="text" id="res2" class="form-control mt-1 bg-dark text-white res2">
+                    <input type="text" readonly="readonly" id="res2"
+                        class="form-control mt-1 bg-dark text-white res2 border-0">
                 </div>
             </form>
             <div class="col-3">
