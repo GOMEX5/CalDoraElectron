@@ -1,7 +1,19 @@
-const { app, BrowserWindow, Menu} = require('electron') 
+const { app, BrowserWindow, Menu, Notification} = require('electron') 
+var os = require('os')
 const path = require('path')
 
+var user = os.userInfo().username
+
 Menu.setApplicationMenu(false)
+
+function showNotification() {
+    const notification = {
+        title: 'Caldora',
+        body: 'Welcome '+user
+    }
+    new Notification(notification).show()
+}
+
 
 function createWindow() {
     const win = new BrowserWindow({
@@ -18,7 +30,7 @@ function createWindow() {
     win.loadFile('index.html')
 }
 
-app.whenReady().then(createWindow)
+app.whenReady().then(createWindow).then(showNotification)
 
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') {
