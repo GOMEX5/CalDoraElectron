@@ -1,6 +1,6 @@
 {
   "name": "CalDora",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "description": "CalDora es una calculadora simple",
   "main": "main.js",
   "scripts": {
