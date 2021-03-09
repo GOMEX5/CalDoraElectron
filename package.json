@@ -1,7 +1,7 @@
 {
   "name": "CalDora",
   "version": "1.0.0",
-  "description": "",
+  "description": "CalDora es una calculadora simple",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
