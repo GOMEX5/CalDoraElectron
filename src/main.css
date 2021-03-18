@@ -5,33 +5,35 @@
 @font-face {
     font-family: 'Spicy Rice';
     src: url(‘Spicy_Rice/SpicyRice-Regular.ttf′) format(‘ttf’);
-    font-weight: 100;
+    font-weight: bold;
     font-style: italic;
     }
-body{
-    font-family: 'Spicy Rice', cursive;
-}
+
+
 .button{
+    font-size: 24px;
     margin: 0;
     width: 100%;
-    height: 50px;
-    margin-bottom: 10px;
+    height: 70px;
+    margin-bottom: 5px;
     border: 1px solid #f2f2f2;
 }
 .button2{
+    font-size: 24px;
     margin: 0;
     width: 100%;
-    height: 50px;
-    margin-bottom: 10px;
+    height: 70px;
+    margin-bottom: 5px;
     border: 1px solid #252525;
 }
 
 .buttom3{
-    margin-left: 250px;
-    margin-top: 10px;
+    font-size: 24px;
+    margin-left: 75%;
+    margin-top: 5px;
 }
 #btnTheme{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 div{
     padding:0;
@@ -39,15 +41,70 @@ div{
 }
 .res{
     text-align: right;
-    height: 70px;
+    height: 60px;
     border: none;
     font-size: 36px;
 }
 .res2{
+    height: 40;
+    font-size: 20px;
     text-align: right;
-    margin-bottom: 10px;
     border: none;
 }
 p{
-    margin-top: 10px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'Spicy Rice', cursive;
+}
+
+@media screen and (max-width:300px){
+
+    body{
+        font-family: 'Spicy Rice', cursive;
+    }
+
+    .button{
+        font-size: 16px;
+        margin: 0;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 5px;
+        border: 1px solid #f2f2f2;
+    }
+    .button2{
+        font-size: 16px;
+        margin: 0;
+        width: 100%;
+        height: 50px;
+        margin-bottom: 5px;
+        border: 1px solid #252525;
+    }
+    
+    .buttom3{
+        font-size: 16px;
+        margin-left: 75%;
+        margin-top: 5px;
+    }
+    #btnTheme{
+        margin-bottom: 5px;
+    }
+    div{
+        padding:0;
+        margin: 0;
+    }
+    .res{
+        text-align: right;
+        height: 60px;
+        border: none;
+        font-size: 36px;
+    }
+    .res2{
+        text-align: right;
+        border: none;
+        font-size: 16px;
+    }
+    p{
+        margin-top: 5px;
+        font-size: 16px;
+    }
 }

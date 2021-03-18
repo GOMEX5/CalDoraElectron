@@ -17,8 +17,8 @@ function showNotification() {
 
 function createWindow() {
     const win = new BrowserWindow({
-        width: 350,
-        height: 560,
+        width: 300,
+        height: 500,
         maximizable: true,
         resizable: false,
         //icon: path.join(__dirname,'icons/icon.png'),
